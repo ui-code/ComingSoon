@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nuto-sans-regular {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.six-caps-regular {
+  font-family: "Six Caps", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  background: linear-gradient(to bottom right, #F0E9F3, #C9BED0);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  position: relative;
+  width: 1024px;
+  height: 600px;
+  background: #1B181F;
+  box-shadow: 20px 20px 35px 1px rgba(0, 0, 0,0.5);
+}
+
+.small-title {
+  letter-spacing: 5px;
+  font-size: 20px;
+  color: #F2F2F3;
+  padding-left: 20px;
+  padding-top: 0px;
+}
+
+.circle-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  position: relative;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to bottom, #262234 0%, #1B181F 40%);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-glow {
+  width: 350px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #5d035c, #922346, #f1647e,#922346,#5d035c);
+  position: absolute;
+  bottom: 135px;
+  filter: blur(30px);
+}
+
+.title {
+  color: #F2F2F3;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 35px;
+  position: absolute;
+  padding-left: 40px;
+  bottom: 240px;
+}
+
+.notify-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: -150px;
+  width: 100%;
+}
+
+.notify-label {
+  color: #B16573;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.notify-action {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input::placeholder {
+  color: #3E3946;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+input.email {
+  background: #121113;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  height: 35px;
+  width: 50%;
+  padding-left: 20px;
+  color: #F2F2F3;
+}
+
+.notify-btn {
+  background: linear-gradient(to right, #2F2C40 0%, #2F2C40 50%, #5d035c 50%, #f1647e);
+  border: none;
+  border-radius: 20px;
+  padding: 13px;
+  color: #9689B1;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-left: -30px;
+  cursor: pointer;
+  background-size: 200%;
+  background-position: 0% 100%;
+  transition: background-position 0.3s ease-out, color 0.3s ease-out;
+}
+
+.notify-btn:hover {
+  background-position: 100% 100%;
+  color: #F2F2F3;
+}
